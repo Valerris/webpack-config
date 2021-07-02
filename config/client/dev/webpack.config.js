@@ -13,5 +13,5 @@ module.exports = merge(commonConfig, {
 	entry,
 	plugins,
 	devtool,
-	...(getEnv("STUB_API") ? "" : { devServer }),
+	devServer,
 })
