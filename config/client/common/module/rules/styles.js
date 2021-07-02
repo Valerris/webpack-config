@@ -33,6 +33,6 @@ module.exports = {
 			},
 		},
 	],
-	include: /src/,
-	exclude: /node_modules/,
+	// include: /src/,
+	// exclude: /node_modules/,
 }
