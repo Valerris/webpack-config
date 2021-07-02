@@ -1,7 +1,6 @@
 const { merge } = require("webpack-merge")
 
 const commonConfig = require("../common/webpack.config")
-const { getEnv } = require("../../utils")
 
 const entry = require("./entry")
 const plugins = require("./plugins")
