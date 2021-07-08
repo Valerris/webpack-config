@@ -17,7 +17,10 @@
 		"serve:dev": "webpack serve",
 		"preserve:prod": "yarn build:prod",
 		"serve:prod": "serve build",
-		"clean": "rimraf node_modules yarn.lock package-lock.json"
+		"clean": "rimraf node_modules yarn.lock package-lock.json",
+		"test": "cross-env NODE_ENV=test jest",
+		"test:w": "cross-env NODE_ENV=test jest --watch",
+		"test:u": "cross-env NODE_ENV=test jest --updateSnapshot"
 	},
 	"dependencies": {
 		"@babel/core": "^7.14.6",
