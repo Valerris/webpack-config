@@ -3,6 +3,9 @@ const plugins = [
 	"@babel/plugin-transform-runtime",
 ]
 
+process.env.NODE_ENV === "development" &&
+	plugins.push("babel-plugin-styled-components")
+
 process.env.STUB_API &&
 	process.env.NODE_ENV === "development" &&
 	plugins.push("react-refresh/babel")
