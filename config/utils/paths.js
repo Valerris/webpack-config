@@ -9,7 +9,7 @@ const build = path.resolve(root, isProdMode() ? "build" : "build-dev")
 const srcPublic = path.resolve(configPckgRoot, "public")
 const buildPublic = path.resolve(build, "public")
 // const buildAssets = path.resolve(buildPublic, "assets")
-const devIndex = "/public/index.html"
+const devIndex = "public/index.html"
 const assetsGeneratorFilenameDir = "public/assets/"
 
 module.exports = {

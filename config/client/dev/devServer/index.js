@@ -6,7 +6,7 @@ module.exports = {
 	port: 8080,
 	compress: true,
 	historyApiFallback: {
-		index: PATHS.devIndex,
+		index: "/" + PATHS.devIndex,
 	},
 	hot: true,
 	liveReload: false,
