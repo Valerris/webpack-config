@@ -1,5 +1,6 @@
 const webpack = require("webpack")
 const ReactRefreshPlugin = require("./react-refresh")
+const TimeFixPlugin = require("./time-fix")
 
 module.exports = [
 	new webpack.DefinePlugin({
@@ -8,4 +9,5 @@ module.exports = [
 	new webpack.HotModuleReplacementPlugin(),
 	new webpack.NoEmitOnErrorsPlugin(),
 	ReactRefreshPlugin,
+	TimeFixPlugin,
 ]
