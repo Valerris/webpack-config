@@ -11,7 +11,7 @@
 	"private": true,
 	"scripts": {
 		"build:dev": "node bin/cli.js --mode development",
-		"build:prod": "node bin/cli.js  --mode production",
+		"build:prod": "node bin/cli.js --mode production",
 		"serve:dev": "webpack serve",
 		"preserve:prod": "yarn build:prod",
 		"serve:prod": "serve build",
