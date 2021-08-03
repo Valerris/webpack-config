@@ -1,13 +1,13 @@
-const { MODE } = require("./config/utils")
+const { MODE } = require("./core/utils")
 
 let config = null
 
 switch (MODE) {
 	case "development":
-		config = require("./config/client/dev/webpack.config")
+		config = require("./core/client/dev/webpack.config")
 		break
 	case "production":
-		config = require("./config/client/prod/webpack.config")
+		config = require("./core/client/prod/webpack.config")
 		break
 	default:
 		throw new Error("No matching configuration was found!")

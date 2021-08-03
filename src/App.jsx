@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import Cmp from "components/Cmp"
+import imgSrc from "../public/assets/pic.jpg"
 
 async function f() {
 	try {
@@ -21,6 +22,7 @@ export default function App() {
 	return (
 		<div>
 			App root! It works! Yes sirskii!!!
+			<img src={imgSrc} />
 			<Cmp />
 		</div>
 	)
