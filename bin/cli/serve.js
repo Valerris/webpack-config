@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const commander = require("commander")
 const start = require("../../core/serve")
 const { version = "1.0.0" } = require("../../package")
