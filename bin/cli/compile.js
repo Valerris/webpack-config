@@ -2,8 +2,7 @@
 
 const commander = require("commander")
 const webpack = require("webpack")
-
-const { version = "1.0.0" } = require("../package")
+const { version = "1.0.0" } = require("../../package")
 
 commander
 	.version(version)
@@ -30,7 +29,7 @@ const options = commander.opts()
 
 process.env.NODE_ENV = options.mode
 
-const config = require("../webpack.config")
+const config = require("../../webpack.config")
 
 webpack(config, (err, stats) => {
 	if (err) {

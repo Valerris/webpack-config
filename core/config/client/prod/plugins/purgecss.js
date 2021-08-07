@@ -1,6 +1,6 @@
 const glob = require("glob")
 const PurgeCssPlugin = require("purgecss-webpack-plugin")
-const { PATHS } = require("../../../utils")
+const { PATHS } = require("../../../../utils")
 
 const FILES = glob.sync(`${PATHS.src}/*.(s?[ac]ss)`, {
 	nodir: true,

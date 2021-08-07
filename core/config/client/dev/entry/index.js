@@ -1,4 +1,4 @@
-const { getEnv } = require("../../../utils")
+const { getEnv } = require("../../../../utils")
 
 module.exports = {
 	index: [

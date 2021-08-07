@@ -1,7 +1,7 @@
 const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
-const { isProdMode } = require("../../../../utils")
+const { isProdMode } = require("../../../../../utils")
 
 module.exports = {
 	test: /\.s?[ac]ss$/i,
@@ -27,7 +27,7 @@ module.exports = {
 				postcssOptions: {
 					config: path.resolve(
 						__dirname,
-						"../../../../../postcss.config.js"
+						"../../../../../../postcss.config.js"
 					),
 				},
 			},

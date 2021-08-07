@@ -1,4 +1,4 @@
-const { PATHS, MODE } = require("../../utils")
+const { PATHS, MODE } = require("../../../utils")
 const entry = require("./entry")
 const plugins = require("./plugins")
 const moduleOpts = require("./module")

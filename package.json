@@ -6,12 +6,14 @@
 	"author": "@valerris",
 	"license": "",
 	"bin": {
-		"vlrrs-compile": "bin/cli.js"
+		"vlrrs-compile": "bin/cli/compile.js",
+		"vlrrs-serve": "bin/cli/serve.js"
 	},
 	"private": true,
 	"scripts": {
-		"build:dev": "node bin/cli.js --mode development",
-		"build:prod": "node bin/cli.js --mode production",
+		"build:dev": "node bin/cli/compile.js --mode development",
+		"build:prod": "node bin/cli/compile.js --mode production",
+		"serve": "node bin/cli/serve.js --mode development --port 3000",
 		"serve:dev": "webpack serve",
 		"preserve:prod": "yarn build:prod",
 		"serve:prod": "serve build",

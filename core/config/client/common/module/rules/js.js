@@ -1,5 +1,5 @@
 const path = require("path")
-const { PATHS } = require("../../../../utils")
+const { PATHS } = require("../../../../../utils")
 
 module.exports = {
 	test: /\.m?jsx?$/i,
@@ -8,9 +8,9 @@ module.exports = {
 			loader: "babel-loader",
 			options: {
 				cacheDirectory: true,
-				configFile: path.resolve(
+				configFile: path.join(
 					__dirname,
-					"../../../../../.babelrc.js"
+					"../../../../../../.babelrc.js"
 				),
 			},
 		},

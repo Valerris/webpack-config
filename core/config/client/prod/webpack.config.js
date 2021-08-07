@@ -1,5 +1,5 @@
 const { merge } = require("webpack-merge")
-const { PATHS } = require("../../utils")
+const { PATHS } = require("../../../utils")
 const commonConfig = require("../common/webpack.config")
 const target = require("./target")
 const plugins = require("./plugins")

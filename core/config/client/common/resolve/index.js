@@ -1,4 +1,4 @@
-const { PATHS } = require("../../../utils")
+const { PATHS } = require("../../../../utils")
 
 module.exports = {
 	modules: [PATHS.src, "node_modules"],
