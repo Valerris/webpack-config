@@ -14,6 +14,7 @@ const absoluteIndex = path.join(buildPublic, "index.html")
 const assetsGeneratorFilenameDir = "public/assets/"
 
 module.exports = {
+	configPckgRoot,
 	root,
 	api,
 	src,

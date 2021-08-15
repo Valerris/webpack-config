@@ -1,13 +1,13 @@
 const { merge } = require("webpack-merge")
 const { PATHS } = require("../../../utils")
 const commonConfig = require("../common/webpack.config")
-const target = require("./target")
+// const target = require("./target")
 const plugins = require("./plugins")
 const optimization = require("./optimization")
 const performance = require("./performance")
 
 module.exports = merge(commonConfig, {
-	target,
+	// target,
 	mode: "production",
 	output: {
 		filename: "[name].[contenthash:5].chunk.js",
