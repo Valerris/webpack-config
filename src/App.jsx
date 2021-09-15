@@ -1,6 +1,6 @@
 import React from "react"
 import Cmp from "components/Cmp"
-import imgSrc from "../public/assets/pic.jpg"
+// import imgSrc from "../public/assets/pic.jpg"
 
 export default function App() {
 	return (

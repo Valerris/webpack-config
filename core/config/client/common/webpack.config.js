@@ -20,7 +20,7 @@ module.exports = {
 	plugins,
 	module: moduleOpts,
 	resolve,
-	stats: "normal",
+	stats: { preset: "normal", errorDetails: true },
 	experiments: {
 		asset: true,
 	},
