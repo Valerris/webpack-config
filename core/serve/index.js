@@ -4,10 +4,6 @@ const config = require("../../webpack.config")
 
 const compiler = webpack(config)
 const options = { ...config.devServer }
-const app = new webpackDevServer(compiler, options)
+const app = new webpackDevServer(options, compiler)
 
-module.exports = async function start(PORT) {
-	return app.listen(PORT, "localhost", () => {
-		console.log(`Starting server on http://localhost:${PORT}`)
-	})
-}
+module.exports = async () => await app.start()

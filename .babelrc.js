@@ -14,6 +14,7 @@ const presets = [
 		"@babel/preset-react",
 		{
 			runtime: "automatic",
+			importSource: "@emotion/react",
 		},
 	],
 ]
@@ -22,7 +23,7 @@ const plugins = [
 	"babel-plugin-transform-imports",
 	...(process.env.NODE_ENV === "production"
 		? ["@babel/plugin-transform-runtime"]
-		: ["babel-plugin-styled-components"]),
+		: ["@emotion"]),
 ]
 
 process.env.STUB_API &&

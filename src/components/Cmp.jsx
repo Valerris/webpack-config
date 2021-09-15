@@ -1,21 +1,15 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { ButtonS } from "components/styled"
-
-async function f() {
-	const rs = await fetch("/from-cmp")
-
-	const res = await rs.json()
-
-	console.log(res)
-}
+import cls from "./styles.css"
 
 export default function Cmp() {
-	useEffect(() => {
-		// f()
-	})
-
 	return (
-		<div>
+		<div
+			className={cls.css}
+			css={{
+				color: "green ",
+			}}
+		>
 			I'm a new Cmp.
 			<ButtonS>Click</ButtonS>
 		</div>

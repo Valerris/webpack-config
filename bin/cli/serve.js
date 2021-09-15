@@ -14,15 +14,14 @@ commander
 		/^(development|production)$/,
 		"development"
 	)
-	.option("-p, --port [port]", "port", "8080")
 	.parse(process.argv)
 
-const { mode, port } = commander.opts()
+const { mode } = commander.opts()
 
 process.env.NODE_ENV = mode
 
 try {
-	start(port)
+	start()
 } catch (err) {
 	throw err
 }
